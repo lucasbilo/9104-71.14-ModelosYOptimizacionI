@@ -1,0 +1,64 @@
+Problem:    tp2
+Rows:       15
+Columns:    17
+Non-zeros:  51
+Status:     OPTIMAL
+Objective:  z = 32080 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 z            B          32080                             
+     2 gc1          NS             0            -0             =          -1.5 
+     3 gc2          NS             0            -0             =          -2.4 
+     4 gc3          NS             0            -0             =         -2.85 
+     5 gc4          NS             0            -0             =          -3.3 
+     6 gc5          NS             0            -0             =         -4.11 
+     7 max_gc1      NU          2000                        2000           0.7 
+     8 max_gc2      NU          4000                        4000           1.5 
+     9 max_gc3      NU          4000                        4000           1.9 
+    10 max_gc4      NU          5000                        5000          2.15 
+    11 max_gc5      NU          3000                        3000          2.11 
+    12 potNS        NU             0                          -0          0.09 
+    13 ns           NS             0            -0             =          -4.8 
+    14 potNC        NU             0                          -0          0.09 
+    15 nc           NS             0            -0             =          -4.8 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 NS           B           1700             0               
+     2 NC           B          16300             0               
+     3 GC1          B           2000             0               
+     4 GC2          B           4000             0               
+     5 GC3          B           4000             0               
+     6 GC4          B           5000             0               
+     7 GC5          B           3000             0               
+     8 GC1_NS       NL             0             0                       < eps
+     9 GC2_NS       NL             0             0                       < eps
+    10 GC3_NS       NL             0             0                       < eps
+    11 GC4_NS       B        755.556             0               
+    12 GC5_NS       B        944.444             0               
+    13 GC1_NC       B           2000             0               
+    14 GC2_NC       B           4000             0               
+    15 GC3_NC       B           4000             0               
+    16 GC4_NC       B        4244.44             0               
+    17 GC5_NC       B        2055.56             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 3.18e-12 on row 11
+        max.rel.err = 5.30e-16 on row 11
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 3.55e-15 on column 1
+        max.rel.err = 1.96e-16 on column 1
+        High quality
+
+KKT.DB: max.abs.err = 1.78e-15 on column 8
+        max.rel.err = 1.78e-15 on column 8
+        High quality
+
+End of output

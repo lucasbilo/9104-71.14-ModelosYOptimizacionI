@@ -1,0 +1,129 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    tp2
+Objective:  z = 32080 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 z            BS   32080.00000  -32080.00000          -Inf    30680.00000      -1.00000        .      max_gc1
+                                            .               +Inf    32080.00000          +Inf          +Inf
+
+     2 gc1          NS        .             .             .         -1133.33333          -Inf   33780.00000 GC5_NS
+                                          -1.50000        .          2000.00000          +Inf   29080.00000 GC1_NC
+
+     3 gc2          NS        .             .             .         -3400.00000          -Inf   40240.00000 GC5_NS
+                                          -2.40000        .          4000.00000          +Inf   22480.00000 GC2_NC
+
+     4 gc3          NS        .             .             .                -Inf          -Inf          +Inf
+                                          -2.85000        .          4000.00000          +Inf   20680.00000 GC3_NC
+
+     5 gc4          NS        .             .             .         -7400.00000          -Inf   56500.00000 GC5_NC
+                                          -3.30000        .          3400.00000          +Inf   20860.00000 GC5_NS
+
+     6 gc5          NS        .             .             .         -6821.42857          -Inf   60116.07143 GC4_NC
+                                          -4.11000        .          1214.28571          +Inf   27089.28571 GC5_NS
+
+     7 max_gc1      NU    2000.00000        .               -Inf         .            -.70000   30680.00000 GC1
+                                            .70000    2000.00000     3133.33333          +Inf   32873.33333 GC5_NS
+
+     8 max_gc2      NU    4000.00000        .               -Inf         .           -1.50000   26080.00000 GC2
+                                           1.50000    4000.00000     7400.00000          +Inf   37180.00000 GC5_NS
+
+     9 max_gc3      NU    4000.00000        .               -Inf         .           -1.90000   24480.00000 GC3
+                                           1.90000    4000.00000           +Inf          +Inf          +Inf
+
+    10 max_gc4      NU    5000.00000        .               -Inf     1600.00000      -2.15000   24770.00000 GC5_NS
+                                           2.15000    5000.00000    12400.00000          +Inf   47990.00000 GC5_NC
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    tp2
+Objective:  z = 32080 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 max_gc5      NU    3000.00000        .               -Inf     1785.71429      -2.11000   29517.85714 GC5_NS
+                                           2.11000    3000.00000     9821.42857          +Inf   46473.21429 GC4_NC
+
+    12 potNS        NU        .             .               -Inf    -4857.14286       -.09000   31642.85714 GC4_NS
+                                            .09000        .         17000.00000          +Inf   33610.00000 GC5_NS
+
+    13 ns           NS        .             .             .          -178.94737          -Inf   32938.94737 GC5_NS
+                                          -4.80000        .            51.12782          +Inf   31834.58647 GC4_NS
+
+    14 potNC        NU        .             .               -Inf   -17000.00000       -.09000   30550.00000 GC5_NS
+                                            .09000        .         37000.00000          +Inf   35410.00000 GC5_NC
+
+    15 nc           NS        .             .             .          -435.29412          -Inf   34169.41176 GC5_NC
+                                          -4.80000        .           200.00000          +Inf   31120.00000 GC5_NS
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    tp2
+Objective:  z = 32080 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 NS           BS    1700.00000       3.75000        .          1214.28571       2.85000   30550.00000 potNS
+                                            .               +Inf     4700.00000       4.21667   32873.33333 max_gc1
+
+     2 NC           BS   16300.00000       2.85000        .         11300.00000       2.57000   27516.00000 max_gc1
+                                            .               +Inf    16785.71429       3.75000   46750.00000 potNS
+
+     3 GC1          BS    2000.00000       -.80000        .              .           -1.50000   30680.00000 max_gc1
+                                            .               +Inf     2000.00000          +Inf          +Inf
+
+     4 GC2          BS    4000.00000       -.90000        .              .           -2.40000   26080.00000 max_gc2
+                                            .               +Inf     4000.00000          +Inf          +Inf
+
+     5 GC3          BS    4000.00000       -.95000        .              .           -2.85000   24480.00000 max_gc3
+                                            .               +Inf     4000.00000          +Inf          +Inf
+
+     6 GC4          BS    5000.00000      -1.15000        .          1600.00000      -3.30000   21330.00000 max_gc4
+                                            .               +Inf     5000.00000          +Inf          +Inf
+
+     7 GC5          BS    3000.00000      -2.00000        .          1785.71429      -4.11000   25750.00000 max_gc5
+                                            .               +Inf     3000.00000          +Inf          +Inf
+
+     8 GC1_NS       NL        .             .             .          -425.00000          -Inf   32080.00000 GC5_NS
+                                            .               +Inf      234.48276        .        32080.00000 GC4_NS
+
+     9 GC2_NS       NL        .             .             .          -850.00000          -Inf   32080.00000 GC5_NS
+                                            .               +Inf      357.89474        .        32080.00000 GC4_NS
+
+    10 GC3_NS       NL        .             .             .         -1700.00000          -Inf   32080.00000 GC5_NS
+                                            .               +Inf      485.71429        .        32080.00000 GC4_NS
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    tp2
+Objective:  z = 32080 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 GC4_NS       BS     755.55556        .             .         -2225.00000        .        32080.00000 GC1_NS
+                                            .               +Inf     2088.88889       1.05000   32873.33333 max_gc1
+
+    12 GC5_NS       BS     944.44444        .             .              .           -1.62000   30550.00000 potNC
+                                            .               +Inf     1465.51724        .        32080.00000 GC1_NS
+
+    13 GC1_NC       BS    2000.00000        .             .          1765.51724        .        32080.00000 GC1_NS
+                                            .               +Inf     2000.00000          +Inf          +Inf
+
+    14 GC2_NC       BS    4000.00000        .             .          3642.10526        .        32080.00000 GC2_NS
+                                            .               +Inf     4000.00000          +Inf          +Inf
+
+    15 GC3_NC       BS    4000.00000        .             .          3514.28571        .        32080.00000 GC3_NS
+                                            .               +Inf     4000.00000          +Inf          +Inf
+
+    16 GC4_NC       BS    4244.44444        .             .          2911.11111      -1.05000   27623.33333 max_gc1
+                                            .               +Inf     5000.00000        .        32080.00000 GC1_NS
+
+    17 GC5_NC       BS    2055.55556        .             .          1534.48276        .        32080.00000 GC1_NS
+                                            .               +Inf     3000.00000       1.62000   35410.00000 potNC
+
+End of report
